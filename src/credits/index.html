@@ -1,0 +1,37 @@
+---
+layout: default
+title: 'Credits: Creativity Jam Team'
+path: credits
+---
+
+<main class="credit-container">
+	<header class="title">
+		<!-- current page title or system prompt/feedback -->
+	</header>
+	<section class="primary">
+		<!-- description of main header, or forms/primary interactions -->
+		<div class="credits">
+			<h2>Credits</h2>
+			<ul class="team-members">
+
+				{% for person in credits.items %}
+				<li class="member"><span class="name">{{person.name}}</span>
+					<ul class="member-roles">
+						{% for contribution in person.contributions %}
+						<li>{{contribution}}</li>
+						{% endfor %}
+					</ul>
+				</li>
+
+				{% endfor %}
+
+
+				<div class="acknowledgements">
+					<h3>Special Thanks</h3>
+					<p><b>John and Will</b> for creating the 2.0 community</p>
+					<p><b>2.0 Discord</b> for being awesome</p>
+				</div>
+		</div>
+	</section>
+
+</main>

@@ -1,0 +1,20 @@
+<nav x-data="{ navOpen: false }" class="{{ 'lg:fixed' if path == 'home' }} w-full p-4 z-10 border-b-2 border-sand-200 mb-4">
+    <a href="{{ site.baseURL }}/" class="mr-4 text-sand-700 font-bold text-lg" tabindex="1">
+        <span>Logo</span>
+    </a>
+    {# desktop nav #}
+    {# <div class="inline-block space-x-4 pr-4"></div> #}
+    <div class="hidden md:inline-block space-x-4"></div>
+    <div class="hidden md:inline-block float-right space-x-8 pr-8">
+        {% include './nav-items.njk' %}
+    </div>
+    {# mobile nav #}
+    <button
+        class="inline-block md:hidden py-1 text-2xl float-right text-sand-700 active:text-gray-400"
+        @click="navOpen = true">
+        <i class="fas fa-bars fa-fw"></i>
+    </button>
+    <div x-show.transition.95ms="navOpen" @click.away="navOpen = false" class="content-between mt-4 space-y-2">
+        {% include './nav-items.njk' %}
+    </div>
+</nav>

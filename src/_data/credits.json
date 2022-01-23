@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "name": "Ben",
+      "contributions": ["Development", "Narrative", "Music"]
+    },
+    {
+      "name": "Val",
+      "contributions": ["Illustration", "Design", "Music"]
+    },
+    {
+      "name": "The Kippers",
+      "contributions": ["Illustration", "Design"]
+    },
+    {
+      "name": "Cam",
+      "contributions": ["Narrative"]
+    },
+    {
+      "name": "Ethan",
+      "contributions": ["Narrative"]
+    }
+  ]
+}

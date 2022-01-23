@@ -16,10 +16,11 @@
 	{% if prism == true %}
 	<link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
 	{% endif %}
+	<link rel="stylesheet" type="text/css" href="/static/fonts/fontawesome/css/all.min.css" />
 </head>
 
 <body class="bg-sand-100">
-	{% include "./partials/navbar.html" %}
+	{% include "./partials/navbar.njk" %}
 
 	{{ content | safe }}
 
