@@ -2,6 +2,21 @@ const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
+// const months = require('./src/_data/calendar')
+const months = [
+  "Nivôse",
+  "Pluviôse",
+  "Ventôse",
+  "Germinal",
+  "Floréal",
+  "Prairial",
+  "Messidor",
+  "Thermidor",
+  "Fructidor",
+  "Vendémiaire",
+  "Brumaire",
+  "Frimaire"
+]
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
@@ -12,9 +27,13 @@ module.exports = function (eleventyConfig) {
 
   // human readable date
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
+    const date = DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+      "MM-dd, yyyy"
     );
+    const originalMonth = Number(date.split('-')[0])
+    const originalDayYear = date.split('-')[1]
+    let newDate = months[originalMonth] + ' ' + originalDayYear
+    return newDate
   });
 
   // Syntax Highlighting for Code blocks
@@ -34,9 +53,11 @@ module.exports = function (eleventyConfig) {
       "./static/css/prism-tomorrow.css",
   });
 
-  // Copy Image Folder to /_site
+  // Copy static assets to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
   eleventyConfig.addPassthroughCopy("./src/static/fonts");
+  eleventyConfig.addPassthroughCopy("./src/static/audio");
+  eleventyConfig.addPassthroughCopy("./src/static/scripts");
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");

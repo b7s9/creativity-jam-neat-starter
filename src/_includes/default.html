@@ -16,22 +16,25 @@
 	{% if prism == true %}
 	<link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
 	{% endif %}
+	<link rel="stylesheet" type="text/css" href="/static/fonts/fontawesome/css/all.min.css" />
 </head>
 
 <body class="bg-sand-100">
-	{% include "./partials/navbar.html" %}
+	{% include "./partials/navbar.njk" %}
 
 	{{ content | safe }}
 
 	{% include "./partials/footer.html" %}
 
-	<script src="/static/js/alpine.js"></script>
+	<!-- <script src="/static/js/alpine.js"></script> -->
 
 	{% if path == "home" %}
 	<!-- Netlify Identity Widget -->
 	<!-- Needed only if you are using Netlify Identity feature -->
 	<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	{% endif %}
+
+	<script src="/static/scripts/main.js"></script>
 
 </body>
 

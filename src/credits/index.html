@@ -1,0 +1,42 @@
+---
+layout: default
+title: 'Credits: Creativity Jam Team'
+path: credits
+---
+<div class="audio mx-auto w-full py-4">
+	<div class="mx-auto text-center">
+		<p class="mb-2">Rusty - Ballad of Rivet River</p>
+		<audio src="/static/audio/rivet-river-bluegrass-v2.m4a" controls loop class="block mx-auto"></audio>
+	</div>
+</div>
+
+<main class="credit-container">
+	<header class="title">
+		<!-- current page title or system prompt/feedback -->
+	</header>
+	<section class="primary">
+		<!-- description of main header, or forms/primary interactions -->
+		<div class="credits">
+			<ul class="team-members">
+
+				{% for person in credits.items %}
+				<li class="member"><span class="name">{{person.name}}</span>
+					<ul class="member-roles">
+						{% for contribution in person.contributions %}
+						<li>{{contribution}}</li>
+						{% endfor %}
+					</ul>
+				</li>
+
+				{% endfor %}
+
+
+				<div class="acknowledgements">
+					<h3>Special Thanks</h3>
+					<p><b>John and Will</b> for creating the 2.0 community</p>
+					<p><b>2.0 Discord</b> for being awesome</p>
+				</div>
+		</div>
+	</section>
+
+</main>

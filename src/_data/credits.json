@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "name": "Ben",
+      "contributions": ["Development", "Narrative", "Music"]
+    },
+    {
+      "name": "Val",
+      "contributions": ["Illustration", "Design", "Music"]
+    },
+    {
+      "name": "The Kipper System",
+      "contributions": ["Illustration", "Design"]
+    },
+    {
+      "name": "Cameron \"Bog-Trotter\" Carlson",
+      "contributions": ["Narrative"]
+    },
+    {
+      "name": "Ethan",
+      "contributions": ["Narrative"]
+    }
+  ]
+}

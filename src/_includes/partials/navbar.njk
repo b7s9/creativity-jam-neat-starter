@@ -1,0 +1,26 @@
+<nav
+    x-data="{ navOpen: false }"
+    class=" fixed top-0 w-full h-20 p-4 z-10 border-sand-200 mb-4 bg-gradient-to-t from-transparent to-sand-200">
+    <a href="{{ site.baseURL }}/" class="inline-block mr-4 h-full text-sand-700 font-bold text-lg" tabindex="1">
+        <img src="/static/img/rivet-river-stamp-site-logo.png" alt="rivet river stamp site logo" class="h-3/4">
+            <span class="sr-only">Go Home</span>
+        </a>
+        {# desktop nav #}
+        <div class="hidden md:inline-block float-right space-x-8 pr-8">
+            {% include './nav-items.njk' %}
+        </div>
+        {# mobile nav #}
+        <button class="inline-block md:hidden text-2xl float-right text-sand-700 active:text-gray-400" @click="navOpen = true">
+            <i class="fas fa-bars fa-fw"></i>
+        </button>
+        <div
+            x-show.transition.95ms="navOpen" @click.away="navOpen = false" class="content-between mt-4 space-y-2">{# {% include './nav-items.njk' %} #}
+        </div>
+    </nav>
+    {% if path == 'home' %}
+        <div class="h-0"></div>
+    {% else %}
+        <div class="h-20"></div>
+    {% endif %}
+    {# <div class="{{ 'h-0' if path == 'home' }} h-12"></div> #}
+    {# <div class="{{ 'h-12' if path != 'home' }}"></div> #}

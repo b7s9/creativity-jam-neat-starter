@@ -1,0 +1,15 @@
+{% if navigation.items %}
+    {% for item in navigation.items %}
+        {% set externalAttribute = '' %}
+        {% set currentAttribute = '' %}
+        {% if item.external %}
+            {% set externalAttribute = ' rel="external"' %}
+        {% endif %}
+        {% if page.url == item.url %}
+            {% set currentAttribute = ' aria-current="page"' %}
+        {% endif %}
+        <a class="block lg:inline-block py-2 lg:py-0 rounded font-bold text-sand-800 hover:text-sand-600" href="{{ site.baseURL }}{{ item.url }}" {{ externalAttribute | safe }} {{ currentAttribute | safe }} tabindex="1">
+            {{ item.text }}
+        </a>
+    {% endfor %}
+{% endif %}
