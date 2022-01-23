@@ -17,5 +17,10 @@
             x-show.transition.95ms="navOpen" @click.away="navOpen = false" class="content-between mt-4 space-y-2">{# {% include './nav-items.njk' %} #}
         </div>
     </nav>
-    <div class="h-12"></div>
+    {% if path == 'home' %}
+        <div class="h-0"></div>
+    {% else %}
+        <div class="h-20"></div>
+    {% endif %}
+    {# <div class="{{ 'h-0' if path == 'home' }} h-12"></div> #}
     {# <div class="{{ 'h-12' if path != 'home' }}"></div> #}
