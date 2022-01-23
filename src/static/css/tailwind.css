@@ -2,7 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-/*Your Custom CSS Goes here*/
+@font-face {
+	font-family: "Basteleur";
+	font-weight: 700;
+	src: url('../fonts/Basteleur-Bold.woff');
+}
+@font-face {
+	font-family: "Savate";
+	font-weight: 600;
+	src: url('../fonts/savate-regular-webfont.woff');
+}
+@font-face {
+	font-family: "Fengardo Neue";
+	font-weight: 500;
+	src: url('../fonts/fengardoneue_regular-webfont.woff');
+}
+@font-face {
+	font-family: "PT Serif";
+	font-weight: 400;
+	src: url('../fonts/pt-serif-v12-latin-regular.woff');
+}
 
 h1 {
   @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
@@ -10,6 +29,21 @@ h1 {
 
 h3 {
   @apply text-2xl font-bold mb-3;
+}
+
+.wranjer h1,
+.wranjer h2,
+.wranjer h3,
+.wranjer h4,
+.wranjer h5 {
+	@apply font-wranjerTitle;
+}
+.faetherwatch h1,
+.faetherwatch h2,
+.faetherwatch h3,
+.faetherwatch h4,
+.faetherwatch h5 {
+	@apply font-faetherwatchTitle;
 }
 
 /* Syntax Highlighting*/

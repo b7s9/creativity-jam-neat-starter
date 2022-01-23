@@ -7,6 +7,8 @@ description: Iterative approaches to corporate strategy foster collaborative
 author: Sven Shermansonn
 date: 2022-01-23T03:37:55.466Z
 tags:
+  - faetherwatch
+  - post
   - second-tag
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.

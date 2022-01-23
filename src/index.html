@@ -1,22 +1,23 @@
 ---
 layout: default
-title: Neat Starter
+title: Rivet River Archive
 path: home
 ---
 
 <div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
+	<p class="mb-3">Welcome to the...</p>
+	<h1 class=" font-title">
 
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
+		<strong class="py-2 bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-brick-700">
+			{{title}}
+		</strong>
+	</h1>
 
-  {% include "./_includes/partials/content.html" %}
+	{% include "./_includes/partials/content.html" %}
+
+	<figure class="h-1/3">
+		<img src="./static/img/old-town-photo-compressed.jpg" alt="Rivet River Postcard Photo"
+			class="w-full h-full rounded-3xl">
+		<figcaption class="text-center">Illustration by Val</figcaption>
+	</figure>
 </div>

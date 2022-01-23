@@ -4,6 +4,8 @@ description: Bring to the table win-win survival strategies to ensure proactive 
 date: 2020-09-02
 author: Surjith S M
 tags:
+  - wranjer
+  - post
   - number-2
 ---
 
