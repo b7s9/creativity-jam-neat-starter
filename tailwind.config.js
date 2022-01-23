@@ -40,7 +40,7 @@ module.exports = {
         wranjerTitle: ['Savate', 'serif'],
         faetherwatchTitle: ['Fengardo Neue', 'serif'],
         sans: ['Graphik', 'sans-serif'],
-        serif: ['PT Serif', 'serif'],
+        serif: ['Fanwood Text', 'PT Serif', 'serif'],
       },
     },
   },

@@ -22,6 +22,28 @@
 	font-weight: 400;
 	src: url('../fonts/pt-serif-v12-latin-regular.woff');
 }
+@font-face {
+	font-family: "Fanwood";
+	font-weight: 400;
+	src: url('../fonts/fanwood-webfont.woff');
+}
+@font-face {
+	font-family: "Fanwood";
+	font-style: italic;
+	font-weight: 400;
+	src: url('../fonts/fanwood_italic-webfont.woff');
+}
+@font-face {
+	font-family: "Fanwood Text";
+	font-weight: 400;
+	src: url('../fonts/fanwood_text-webfont.woff');
+}
+@font-face {
+	font-family: "Fanwood Text";
+	font-style: italic;
+	font-weight: 400;
+	src: url('../fonts/fanwood_text_italic-webfont.woff');
+}
 
 h1 {
   @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
@@ -69,8 +91,14 @@ body pre[class*="language-"] {
 	grid-column: 1/2;
 	grid-row: 1/3;
 	width: 100%;
-	height: 100vh;
+	height: 72vh;
 	overflow-y: hidden;
+  }
+
+  @media screen and (min-height: 480px) {
+	.credit-container .primary {
+		height: 83vh;
+	}
   }
   
   .credit-container .cta {

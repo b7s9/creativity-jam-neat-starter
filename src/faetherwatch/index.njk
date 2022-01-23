@@ -1,11 +1,13 @@
 ---
-title: Wranjer Family Archive
+title: Faetherwatch Family Archive
 layout: blog
-family: wranjer
+family: faetherwatch
+audioSlug: 'steampunk-instrumental-v2.m4a'
+audioTitle: 'Unknown Composer - Faetherwatch Family Song'
 ---
 
 <section class="mt-15">
-	{% set postslist = collections.wranjer %}
+	{% set postslist = collections.faetherwatch %}
 
 	{% for post in postslist | reverse %}
 	<article class="my-8">
@@ -33,7 +35,7 @@ family: wranjer
 		{% endif %}
 
 		<p>
-			<a href="{{ post.url | url }}" class="text-indigo-500 font-bold text-lg">
+			<a href="{{ post.url | url }}" class="text-brick-700 font-bold text-lg">
 				Read more →
 			</a>
 		</p>

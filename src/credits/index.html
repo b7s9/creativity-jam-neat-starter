@@ -3,6 +3,12 @@ layout: default
 title: 'Credits: Creativity Jam Team'
 path: credits
 ---
+<div class="audio mx-auto w-full py-4">
+	<div class="mx-auto text-center">
+		<p class="mb-2">Rusty - Ballad of Rivet River</p>
+		<audio src="/static/audio/rivet-river-bluegrass-v2.m4a" controls loop class="block mx-auto"></audio>
+	</div>
+</div>
 
 <main class="credit-container">
 	<header class="title">
@@ -11,7 +17,6 @@ path: credits
 	<section class="primary">
 		<!-- description of main header, or forms/primary interactions -->
 		<div class="credits">
-			<h2>Credits</h2>
 			<ul class="team-members">
 
 				{% for person in credits.items %}
