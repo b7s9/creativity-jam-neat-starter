@@ -1,5 +1,5 @@
 ---
-title: Excerpt of Journal Entry of Rusty’s Assistant
+title: 'Excerpt #2: Journal Entry of Rusty’s Assistant'
 author: Rela Embereye, Assistant to Rhodon “Rusty” Faetherwatch
 date: 3048-08-04
 family: faetherwatch

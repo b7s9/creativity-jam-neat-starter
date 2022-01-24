@@ -1,7 +1,7 @@
 ---
 title: Excerpt from Rusty Faetherwatch’s Journal
 author: Rusty Faetherwatch, Treasurer of Rivet River
-date: 2034-08-10
+date: 3048-08-10
 family: faetherwatch
 tags:
     - faetherwatch
