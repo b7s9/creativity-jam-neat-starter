@@ -1,10 +1,7 @@
 ---
 title: Logbook from the Mines, Excerpt
-description: 'Messidor 29: Deposit on level 5 continues to be worked. Estimates put it at 50% complete. 
-Brunfield out 3 weeks due to back injury. Pending the hiring of a temporary replacement. 
-Surveying Level 10 continues to be unsuccessful.'
 author: Bremble Figerotte, Shift supervisor at the Rivet River Mine
-date: 2021-05-08
+date: 3048-07-29
 thumbnailImageSlug: ''
 family: 'wranjer'
 tags:

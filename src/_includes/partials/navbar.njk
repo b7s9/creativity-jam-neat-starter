@@ -10,17 +10,20 @@
             {% include './nav-items.njk' %}
         </div>
         {# mobile nav #}
-        <button class="inline-block md:hidden text-2xl float-right text-sand-700 active:text-gray-400" @click="navOpen = true">
+        <button
+            class="inline-block md:hidden text-2xl float-right text-dirt-900 opacity-80 active:text-gray-400"
+            @click="navOpen = true">
             <i class="fas fa-bars fa-fw"></i>
         </button>
         <div
-            x-show.transition.95ms="navOpen" @click.away="navOpen = false" class="content-between mt-4 space-y-2">{# {% include './nav-items.njk' %} #}
+            x-show.transition.95ms="navOpen"
+            @click.away="navOpen = false"
+            class="bg-sand-100 content-between space-y-2 py-4 h-screen">
+            {% include './nav-items.njk' %}
         </div>
     </nav>
     {% if path == 'home' %}
-        <div class="h-0"></div>
+        <div class="h-20 lg:h-0"></div>
     {% else %}
         <div class="h-20"></div>
     {% endif %}
-    {# <div class="{{ 'h-0' if path == 'home' }} h-12"></div> #}
-    {# <div class="{{ 'h-12' if path != 'home' }}"></div> #}

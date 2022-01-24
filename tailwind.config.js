@@ -33,6 +33,11 @@ module.exports = {
           700: '#A84F0A',
           800: '#98470A',
           900: '#863F08',
+        },
+        dirt: {
+          700: '#763F2C',
+          800: '#55291A',
+          900: '#372417'
         }
       },
       fontFamily: {
@@ -40,7 +45,7 @@ module.exports = {
         wranjerTitle: ['Savate', 'serif'],
         faetherwatchTitle: ['Fengardo Neue', 'serif'],
         sans: ['Graphik', 'sans-serif'],
-        serif: ['Fanwood Text', 'PT Serif', 'serif'],
+        serif: ['PT Serif', 'serif'],
       },
     },
   },

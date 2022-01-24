@@ -3,18 +3,15 @@ title: Wranjer Family Archive
 layout: blog
 family: wranjer
 audioSlug: 'streets-of-rivet-river.m4a'
-audioTitle: 'Old Wranger Folk Song - Streets of Rivet River'
+audioTitle: 'Old Wranjer Folk Song - Streets of Rivet River'
 ---
 
 <section class="mt-15">
-
-
-
 	{% set postslist = collections.wranjer %}
 
-	{% for post in postslist | reverse %}
-	<article class="my-8">
-		<h2 class="font-bold text-3xl text-gray-900 mb-2">
+	{% for post in postslist %}
+	<article class="my-10">
+		<h2 class="font-bold text-3xl text-dirt-900 opacity-70 mb-4">
 			<a href="{{ post.url | url }}">
 				{% if post.data.title %}
 				{{ post.data.title }}
@@ -23,26 +20,22 @@ audioTitle: 'Old Wranger Folk Song - Streets of Rivet River'
 				{% endif %}
 			</a>
 		</h2>
-		<p class="text-base leading-6 text-gray-500 mb-3">
-			<time>
-				{{ post.date | readableDate }}
-				by
-				<a>{{ post.data.author }}</a>
-
-			</time>
+		<p class="text-sm leading-6 mb-3 opacity-90 font-bold">
+			<time>{{ post.date | readableDate }}</time>
 		</p>
+		<p class="font-serif">by <span class="">{{ post.data.author }}</span></p>
 		{% if post.data.description %}
-		<p class="text-lg text-gray-500 mb-3">
+		<p class="mb-3 opacity-70">
 			{{ post.data.description }}
 		</p>
 		{% endif %}
 
-		<p>
-			<a href="{{ post.url | url }}" class="text-brick-700 font-bold text-lg">
+		<p class="py-6">
+			<a href="{{ post.url | url }}" class="text-brick-700 font-bold text-lg font-wranjerTitle">
 				Read more →
 			</a>
 		</p>
-
+	<hr class="inline-block w-full">
 	</article>
 	{% endfor %}
 </section>
