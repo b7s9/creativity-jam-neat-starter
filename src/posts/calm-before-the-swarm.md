@@ -1,8 +1,7 @@
 ---
 title: The Calm Before the Swarm
 subtitle: How the Nanobots have changed the future of our town forever
-author: Unknown Journalist
-artifact-type: Rivet River News Clipping
+author: Bremble Figeroote, Rivet River Rag
 date: 3048-07-17
 family: wranjer
 tags:

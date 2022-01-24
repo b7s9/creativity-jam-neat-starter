@@ -1,5 +1,6 @@
 ---
-title: Letter written by Sl33k Wranjer to Rusty Faetherwatch in the direct aftermath of the Invasion of the Mine
+title: Letter written by Sl33k Wranjer
+subtitle: Letter from Sl33k Wranjer to Rusty Faetherwatch in the direct aftermath of the Invasion of the Mine
 author: Sl33k Wranjer, Head of Security
 date: 3048-08-05
 family: wranjer
