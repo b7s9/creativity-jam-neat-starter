@@ -5,12 +5,17 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>
-		{{title}}
-	</title>
+	<title>{{title}}</title>
 	{% if description %}
+	<meta name="og:title" content="{{title}}">
 	<meta name="description" content="{{description}}" />
 	{% endif %}
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon.ico/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon.ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon.ico/favicon-16x16.png">
+	<!-- <link rel="manifest" href="/static/img/favicon.ico/site.webmanifest"> -->
+
 	{% block head %}{% endblock %}
 	<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
 	{% if prism == true %}
@@ -26,7 +31,7 @@
 
 	{% include "./partials/footer.html" %}
 
-	<!-- <script src="/static/js/alpine.js"></script> -->
+	<script src="/static/js/alpine.js"></script>
 
 	{% if path == "home" %}
 	<!-- Netlify Identity Widget -->
