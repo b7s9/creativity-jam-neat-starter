@@ -29,7 +29,7 @@ collections:
       - {
           label: "Article Preview Text",
           name: "description",
-          widget: "string",
+          widget: "hidden",
           required: false,
         }
       - { label: "Author", name: "author", widget: "string" }
