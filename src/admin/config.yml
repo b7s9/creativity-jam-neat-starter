@@ -4,7 +4,7 @@ backend:
   branch: master
   ### enable below lines for github integration ###
   # name: github
-  # repo: surjithctly/neat-starter
+  # repo: b7s9/creativity-jam-neat-starter
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
@@ -12,24 +12,60 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "Blog"
-    name: "blog"
+  - label: "Post"
+    name: "post"
     folder: "src/posts"
     create: true
     editor:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Subtitle",
+          name: "subtitle",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Article Preview Text",
+          name: "description",
+          widget: "string",
+          required: false,
+        }
       - { label: "Author", name: "author", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Publish Date", name: "date", widget: "string" }
       - widget: select
-        label: "tags"
-        name: "tags"
-        multiple: true
-        create: true
-        options: ["Tags", "created", "from", "config.yml"]
+        label: "Family"
+        name: "family"
+        multiple: false
+        create: false
+        options:
+          - { label: "Wranjer", value: "wranjer" }
+          - { label: "Faetherwatch", value: "faetherwatch" }
+        default: "wranjer"
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "About"
+    name: "about"
+    folder: "src/about"
+    create: false
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Author", name: "author", widget: "string", required: false }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
   - label: "Settings"
     name: "settings"
     editor:
