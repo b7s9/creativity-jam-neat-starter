@@ -8,6 +8,6 @@ tags:
     - faetherwatch
 ---
 
-![Nanobot Diagram](/static/img/posts/nanobot-diagram-know-thy-enemy.png)
+![Nanobot Diagram](/static/img/nanobot-diagram-know-thy-enemy.png)
 
 Poster distributed by Rivet River town hall following Wednesday’s latest Nanobot attack.
