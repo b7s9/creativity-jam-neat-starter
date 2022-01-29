@@ -15,6 +15,6 @@ You are a coward and a scheister. I will step on your neck with a smile when thi
 
 Good Luck, 
 
-![Sl33k Signature](/static/img/signatures/sleek-signature-1.png)
+![Sl33k Signature](/static/img/sleek-signature-1.png)
 
 S. W
