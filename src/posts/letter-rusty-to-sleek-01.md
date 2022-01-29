@@ -13,7 +13,7 @@ The events of the recent days have been, to be understating, not ideal. The trea
 
 The full scope of your sins will be accounted for,
 
-![Rusty Signature](/static/img/signatures/rusty-signature-1.png)
+![Rusty Signature](/static/img/rusty-signature-1.png)
 
 R. Faetherwatch
 

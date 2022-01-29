@@ -6,10 +6,6 @@ thumbnailImageSlug: ''
 family: 'wranjer'
 tags:
   - wranjer
-  - post
-  - left
-  - center
-  - right
 ---
 ## Messidor 29:
 

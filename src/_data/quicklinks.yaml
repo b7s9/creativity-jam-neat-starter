@@ -1,8 +1,8 @@
 ---
 links:
-    - title: Faetherwatch Family Archive
-      url: "/faetherwatch"
-      desc: The defenders.
-    - title: Wranjer Family Archive
-      url: "/wranjer"
-      desc: The miners.
+  - title: Wranjer Family Archive
+    url: "/wranjer"
+    desc: The miners.
+  - title: Faetherwatch Family Archive
+    url: "/faetherwatch"
+    desc: The defenders.
