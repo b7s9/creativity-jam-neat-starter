@@ -1,11 +1,13 @@
 ---
-title: Letter written by Rusty Faetherwatch to Sl33k Wranjer in the direct aftermath of the Invasion of the Mine
+title: Letter written by Rusty Faetherwatch
+subtitle: Letter from Rusty Faetherwatch to Sl33k Wranjer in the direct
+  aftermath of the Invasion of the Mine
 author: Rhodon “Rusy” Featherwatch, Treasurer of Rivet River
 date: 3048-08-04
 family: faetherwatch
 tags:
-    - post
-    - faetherwatch
+  - post
+  - faetherwatch
 ---
 Dear Sl33k,
 
