@@ -85,6 +85,14 @@ hr {
 	@apply font-faetherwatchTitle;
 }
 
+.article-text a {
+	@apply underline text-brick-700 hover:text-brick-600 hover:no-underline;
+}
+
+.postlist a:visited {
+	@apply text-purple-900 hover:text-purple-700;
+}
+
 /* Syntax Highlighting*/
 
 body :not(pre) > code[class*="language-"],

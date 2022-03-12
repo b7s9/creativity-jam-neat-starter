@@ -12,8 +12,8 @@ portraitCaption: 'Rhodon “Rusty” Faetherwatch (2998-3086), Treasurer of Rive
 	{% set postslist = collections.faetherwatch %}
 
 	{% for post in postslist %}
-	<article class="my-10">
-		<h2 class="font-bold text-3xl text-dirt-900 opacity-70 mb-4">
+	<article class="my-10 postlist">
+		<h2 class="font-bold text-3xl text-dirt-700 hover:text-dirt-900 opacity-70 mb-4">
 			<a href="{{ post.url | url }}">
 				{% if post.data.title %}
 				{{ post.data.title }}
@@ -26,17 +26,17 @@ portraitCaption: 'Rhodon “Rusty” Faetherwatch (2998-3086), Treasurer of Rive
 			<time>{{ post.date | readableDate }}</time>
 		</p>
 		<p class="font-serif">by <span class="">{{ post.data.author }}</span></p>
-		{% if post.data.description %}
-		<p class="mb-3 opacity-70">
-			{{ post.data.description }}
+		{% if post.data.subtitle %}
+		<p class="font-serif my-3">
+			{{ post.data.subtitle }}
 		</p>
 		{% endif %}
 
-		<p class="py-6">
-			<a href="{{ post.url | url }}" class="text-brick-700 font-bold text-lg font-faetherwatchTitle">
+		{# <p class="py-6">
+			<a href="{{ post.url | url }}" class="text-brick-700 hover:text-brick-600 font-bold text-lg font-faetherwatchTitle">
 				Read more →
 			</a>
-		</p>
+		</p> #}
 	<hr class="inline-block w-full">
 	</article>
 
