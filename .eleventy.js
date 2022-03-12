@@ -2,6 +2,8 @@ const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
+const striptags = require("striptags");
+
 // const months = require('./src/_data/calendar')
 const months = [
   "Nivôse",
@@ -17,6 +19,26 @@ const months = [
   "Brumaire",
   "Frimaire"
 ]
+
+function extractExcerpt(article) {
+  if (!article.hasOwnProperty("templateContent")) {
+    console.warn(
+      'Failed to extract excerpt: Document has no property "templateContent".'
+    );
+    return null;
+  }
+
+  let excerpt = null;
+  const content = article.templateContent;
+
+  excerpt = striptags(content)
+    .substring(0, 200) // Cap at 200 characters
+    .replace(/^\s+|\s+$|\s+(?=\s)/g, "")
+    .trim()
+    .concat("...");
+  return excerpt;
+}
+
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
@@ -35,6 +57,8 @@ module.exports = function (eleventyConfig) {
     let newDate = months[originalMonth] + ' ' + originalDayYear
     return newDate
   });
+
+  eleventyConfig.addShortcode("excerpt", (article) => extractExcerpt(article));
 
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
