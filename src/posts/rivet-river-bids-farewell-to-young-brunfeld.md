@@ -7,3 +7,5 @@ tags:
   - wranjer
 ---
 ![Brunfeld's casket](/static/img/casket.jpg)
+
+“Rivet River bids farewell to young Brunfeld.” Photograph published in the Rivet River Rag on 17 Vendémiaire.
