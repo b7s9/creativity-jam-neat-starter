@@ -1,5 +1,6 @@
 ---
 title: Letter from Rusty Faetherwatch to Roa
+subtitle: A contract for the blueprints to Boyhowdee
 author: Rhodon “Rusty” Faetherwatch, Treasurer of Rivet River
 date: 3048-08-05
 family: faetherwatch

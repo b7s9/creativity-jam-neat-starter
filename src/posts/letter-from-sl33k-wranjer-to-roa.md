@@ -1,5 +1,6 @@
 ---
 title: Letter from Sl33k Wranjer to Roa
+subtitle: A contract for the blueprints to Y33 H4W
 author: Sl33k Wranjer, Head of Security of Rivet River Mine
 date: 3048-08-05
 family: wranjer
