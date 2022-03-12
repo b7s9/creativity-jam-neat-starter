@@ -6,6 +6,8 @@ family: wranjer
 tags:
   - wranjer
 ---
+![Sleek's contract with Roa](/static/img/sleek-roa-contract.jpg)
+
 Hi Roa,
 
 Here are the requested funds. Your help in saving this town from the greedy Faetherwatches will not go unseen.
@@ -16,6 +18,6 @@ Also I mean this with the greatest respect but I have seen lame horses with bett
 
 Thank you & Take Care,
 
-![Sl33k Wranjer signature](/static/img/sleek-signature-2.png)
+![Sleek Wranjer signature](/static/img/sleek-signature-2.png)
 
 S.W

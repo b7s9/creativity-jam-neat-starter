@@ -6,6 +6,8 @@ family: faetherwatch
 tags:
   - faetherwatch
 ---
+![Rusty's contract with Roa](/static/img/rusty-roa-contract.jpg)
+
 Roa,
 
 I hope I am getting the address correctly. I was having trouble reading it. 
