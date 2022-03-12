@@ -6,6 +6,8 @@ family: faetherwatch
 tags:
   - faetherwatch
 ---
+![Confrontation of Mechs](/static/img/confrontation-of-mechs.jpg)
+
 Sefta Greenmane was there when it all happened. 
 
 “I found it weird that all of this happened when the night sky was so, so beautiful. The moon was visible when the sun was still out and Chlorophane was so very close. Chlorophane was so visible that you could see its Rings. These heavenly bodies floated in the glow of the setting sun behind that…ludicrous display. I just don’t understand it.”
