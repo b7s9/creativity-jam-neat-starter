@@ -9,10 +9,9 @@ tags:
   - post
   - wranjer
 ---
-
 Dear Rhodon, 
 
-You are a coward and a scheister. I will step on your neck with a smile when this is all done and you will still thank me for showing you kindness. Funny of you to accuse me incompetence when you wouldn’t know a competent action if it introduced itself to you. You and your accusations will not know pain like what I will deliver onto you.
+You are a coward and a scheister. I will step on your neck with a smile when this is all done and you will still thank me for showing you kindness. Funny of you to accuse me of incompetence when you wouldn’t know a competent action if it introduced itself to you. You and your accusations will not know pain like what I will deliver onto you.
 
 Good Luck, 
 
