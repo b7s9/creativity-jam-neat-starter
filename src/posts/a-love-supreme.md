@@ -3,7 +3,7 @@ title: A Love Supreme
 subtitle: Boyhowdee and Y33 H4W abandon the war between the Wranjers and
   Faetherwatch, in the name of love
 author: Rivet River Rag
-date: 3048-10-13
+date: 3048-08-14
 family: wranjer
 tags:
   - wranjer
