@@ -1,7 +1,7 @@
 ---
 title: Know Thy Enemy
 author: Rivet River Rag
-date: 3048-07-17
+date: 3048-06-15
 family: faetherwatch
 tags:
   - post
