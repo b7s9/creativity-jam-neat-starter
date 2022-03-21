@@ -6,4 +6,6 @@ family: wranjer
 tags:
   - wranjer
 ---
-![](/static/img/a5c2d497-8938-4c6b-9a0c-fe5b9e2bd3a5.jpeg "Blueprint retrieved from Sl33k Wranjer’s personal documents.")
+![Y33 H4W Blueprint](/static/img/a5c2d497-8938-4c6b-9a0c-fe5b9e2bd3a5.jpeg)
+
+Blueprint retrieved from Sl33k Wranjer’s personal documents.
