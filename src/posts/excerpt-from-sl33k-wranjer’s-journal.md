@@ -1,7 +1,7 @@
 ---
 title: Excerpt from Sl33k Wranjer’s Journal
 author: Sl33k Wranjer, Head of Security for Rivet River Mine
-date: 3048-09-12
+date: 3048-08-12
 family: wranjer
 tags:
   - wranjer
