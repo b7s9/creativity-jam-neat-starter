@@ -2,7 +2,7 @@
 title: The Calm Before the Swarm
 subtitle: How the Nanobots have changed the future of our town forever
 author: Bremble Figerotte, Rivet River Rag
-date: 3048-07-17
+date: 3048-06-10
 family: wranjer
 tags:
   - wranjer
