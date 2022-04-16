@@ -1,5 +1,6 @@
 ---
 title: Excerpt from Rusty Faetherwatch’s Journal
+subtitle: Containing Blueprints of Boyhowdee
 author: Rusty Faetherwatch, Treasurer of Rivet River
 date: 3048-08-11
 family: faetherwatch
