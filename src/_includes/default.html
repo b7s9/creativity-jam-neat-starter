@@ -1,65 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="x-ua-compatible" content="ie=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>{{title}}</title>
-		{% if description %}
-		<meta name="og:title" content="{{title}}" />
-		<meta name="description" content="{{description}}" />
-		{% endif %}
 
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="/static/img/favicon.ico/apple-touch-icon.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="/static/img/favicon.ico/favicon-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="/static/img/favicon.ico/favicon-16x16.png"
-		/>
-		<!-- <link rel="manifest" href="/static/img/favicon.ico/site.webmanifest"> -->
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>{{title}}</title>
+	{% if description %}
+	<meta name="og:title" content="{{title}}" />
+	<meta name="description" content="{{description}}" />
+	{% endif %}
 
-		{% block head %}{% endblock %}
-		<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
-		{% if prism == true %}
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="/static/css/prism-tomorrow.css"
-		/>
-		{% endif %}
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="/static/fonts/fontawesome/css/all.min.css"
-		/>
-	</head>
+	<link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon.ico/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon.ico/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon.ico/favicon-16x16.png" />
+	<!-- <link rel="manifest" href="/static/img/favicon.ico/site.webmanifest"> -->
 
-	<body class="bg-sand-100">
-		{% include "./partials/navbar.njk" %} {{ content | safe }} {% include
+	{% block head %}{% endblock %}
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/static/lib/lightbox/lightbox.min.css" />
+	{% if prism == true %}
+	<link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css" />
+	{% endif %}
+	<link rel="stylesheet" type="text/css" href="/static/fonts/fontawesome/css/all.min.css" />
+</head>
+
+<body class="bg-sand-100">
+	{% include "./partials/navbar.njk" %} {{ content | safe }} {% include
 		"./partials/footer.html" %}
 
-		<script src="/static/js/alpine.js"></script>
+	<script src="/static/js/alpine.js"></script>
 
-		{% if path == "home" %}
-		<!-- Netlify Identity Widget -->
-		<!-- Needed only if you are using Netlify Identity feature -->
-		<script
-			type="text/javascript"
-			src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-		></script>
-		{% endif %}
+	{% if path == "home" %}
+	<!-- Netlify Identity Widget -->
+	<!-- Needed only if you are using Netlify Identity feature -->
+	<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	{% endif %}
 
-		<script src="/static/scripts/main.js"></script>
-	</body>
+	<script src="/static/lib/lightbox/lightbox.min.js"></script>
+	<script src="/static/scripts/main.js"></script>
+</body>
+
 </html>
