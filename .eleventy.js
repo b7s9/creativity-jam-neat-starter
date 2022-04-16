@@ -82,6 +82,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/static/fonts");
   eleventyConfig.addPassthroughCopy("./src/static/audio");
   eleventyConfig.addPassthroughCopy("./src/static/scripts");
+  eleventyConfig.addPassthroughCopy("./src/static/lib");
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");

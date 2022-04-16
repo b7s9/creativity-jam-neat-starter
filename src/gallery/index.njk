@@ -1,0 +1,21 @@
+---
+layout: default
+title: 'Gallery: Creativity Jam 2022'
+---
+
+<header class="max-w-7xl px-4 m-auto block text-left mb-8">
+    <h1 class="text-left font-title">{{ title }}</h1>
+    <p class="my-4">A collection of all the art for this project, courtesy of Val and Kipper.</p>
+    <hr/>
+</header>
+<main class="max-w-7xl m-auto">
+    <div class="gallery">
+        {% for imgSrc in images.items %}
+            <div class="gallery-item">
+                <a href="/static/img/{{ imgSrc }}" data-lightbox="gallery" data-image-alt="">
+                    <img src="/static/img/{{ imgSrc }}" alt=""/>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</main>

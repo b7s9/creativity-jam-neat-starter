@@ -13,7 +13,25 @@ path: home
 		</strong>
 	</h1>
 
-	{% include "./_includes/partials/content.html" %}
+	<div class="w-full max-w-2xl grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8 px-4 lg:mx-0">
+		{% if quicklinks.links %}
+		{% for item in quicklinks.links %}
+		<a href="{{item.url}}" class="p-5 border rounded border-sand-300 hover:border-brick-400">
+			<h3 class="font-title">{{item.title}}
+				→</h3>
+			<p>{{item.desc}}</p>
+		</a>
+		{% endfor %}
+		{% endif %}
+	</div>
+
+	<div class="max-w-2xl w-full px-4">
+		<a href="/gallery"
+			class="block mt-4 mb-8 lg:mb-12 lg:mt-8 p-5 border rounded border-sand-300 hover:border-brick-400">
+			<h3 class="text-xl font-title">View Gallery</h3>
+			<p>We recommend reading the full story first!</p>
+		</a>
+	</div>
 
 	<figure class="max-w-2xl mx-4">
 		<img src="./static/img/old-town-photo-compressed.jpg" alt="Rivet River Postcard Photo"
