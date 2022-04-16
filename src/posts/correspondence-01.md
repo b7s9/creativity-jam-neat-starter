@@ -24,3 +24,5 @@ Sh1ne.
 Best, 
 
 Sl33k
+
+![Sleek Wranjer signature](/static/img/sleek-signature-1.png)
